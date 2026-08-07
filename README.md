@@ -81,7 +81,8 @@ draft: true                # true = 只在本地可见，线上不会有
 | --- | --- |
 | 站名、作者名、GitHub / 邮箱链接 | `src/consts.ts` |
 | 导航文字、首页那段自我介绍、各页标题 | `src/i18n/ui.ts` |
-| 「关于」页正文 | `src/content/about/{zh,ja,en}.md` |
+| 「关于」页正文（含项目表格、影响我的东西） | `src/content/about/{zh,ja,en}.md` |
+| 头像 | 换掉 `public/avatar.webp` 和 `public/avatar.jpg`（512×512 方图，网页里自动裁成圆形；.jpg 那份是分享到社交平台时的预览图） |
 | 颜色、字体、字号、版心宽度 | `src/styles/global.css` 最上面的 `:root` |
 | 站点网址（换域名时） | `astro.config.mjs` 的 `SITE_URL` + `src/consts.ts` 的 `SITE.url` + `public/robots.txt` |
 

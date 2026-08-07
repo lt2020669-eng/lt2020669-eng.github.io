@@ -4,11 +4,13 @@ export const SITE = {
   /** 与 astro.config.mjs 里的 site 保持一致 */
   url: 'https://lt2020669-eng.github.io',
   /** 页眉的字标 */
-  wordmark: 'lili',
+  wordmark: 'lily',
   /** 作者名，用于 RSS / 版权 / 结构化数据 */
-  author: 'lili',
+  author: 'lily',
   /** 建站年份，用于页脚 */
-  since: 2026,
+  since: 2025,
+  /** 头像，放在 public/ 下 */
+  avatar: '/avatar.webp',
 } as const;
 
 export const LINKS = {

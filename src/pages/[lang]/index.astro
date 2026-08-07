@@ -16,6 +16,15 @@ const posts = (await getAllPosts(lang)).slice(0, 8);
 
 <Base lang={lang} title={SITE.wordmark} description={t('site.description')}>
   <section class="hero">
+    <img
+      class="avatar"
+      src={SITE.avatar}
+      width="88"
+      height="88"
+      alt={SITE.author}
+      fetchpriority="high"
+      decoding="async"
+    />
     <h1>{t('home.greeting')}</h1>
     <p>{t('home.intro')}</p>
   </section>
