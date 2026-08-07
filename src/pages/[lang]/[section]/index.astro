@@ -1,0 +1,28 @@
+---
+import Base from '../../../layouts/Base.astro';
+import EntryList from '../../../components/EntryList.astro';
+import { LANGS, SECTIONS, type Lang, type Section } from '../../../consts';
+import { useTranslations } from '../../../i18n/ui';
+import { getPosts } from '../../../lib/posts';
+
+export function getStaticPaths() {
+  return LANGS.flatMap((lang) => SECTIONS.map((section) => ({ params: { lang, section } })));
+}
+
+const lang = Astro.params.lang as Lang;
+const section = Astro.params.section as Section;
+const t = useTranslations(lang);
+
+const posts = await getPosts(section, lang);
+const title = section === 'blog' ? t('blog.title') : t('diary.title');
+const lede = section === 'blog' ? t('blog.lede') : t('diary.lede');
+---
+
+<Base lang={lang} title={title} description={lede}>
+  <header class="page-head">
+    <h1>{title}</h1>
+    <p class="lede">{lede}</p>
+  </header>
+
+  <EntryList posts={posts} lang={lang} />
+</Base>

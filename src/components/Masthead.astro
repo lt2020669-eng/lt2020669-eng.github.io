@@ -1,0 +1,70 @@
+---
+import { SITE, LANGS, LANG_LABEL, type Lang } from '../consts';
+import { useTranslations } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const path = Astro.url.pathname;
+const segments = path.split('/').filter(Boolean);
+const rest = segments.slice(1).join('/');
+const altHref = (target: Lang) => `/${target}/${rest}${rest ? '/' : ''}`;
+
+const links = [
+  { href: `/${lang}/blog/`, label: t('nav.blog'), match: `/${lang}/blog` },
+  { href: `/${lang}/diary/`, label: t('nav.diary'), match: `/${lang}/diary` },
+  { href: `/${lang}/about/`, label: t('nav.about'), match: `/${lang}/about` },
+];
+---
+
+<header class="masthead">
+  <div class="wrap wrap--wide masthead__inner">
+    <a class="wordmark" href={`/${lang}/`}>{SITE.wordmark}</a>
+
+    <nav class="nav" aria-label={SITE.wordmark}>
+      {
+        links.map((link) => (
+          <a href={link.href} aria-current={path.startsWith(link.match) ? 'page' : undefined}>
+            {link.label}
+          </a>
+        ))
+      }
+
+      <span class="nav__sep" aria-hidden="true"></span>
+
+      <span class="langs">
+        {
+          LANGS.map((code) => (
+            <a href={altHref(code)} hreflang={code} aria-current={code === lang ? 'true' : undefined}>
+              {LANG_LABEL[code]}
+            </a>
+          ))
+        }
+      </span>
+
+      <span class="nav__sep" aria-hidden="true"></span>
+
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label={t('theme.toggle')}>
+        <span data-theme-icon>◐</span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<script is:inline>
+  document.querySelector('[data-theme-toggle]')?.addEventListener('click', function () {
+    var root = document.documentElement;
+    var isDark =
+      root.dataset.theme === 'dark' ||
+      (!root.dataset.theme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    var next = isDark ? 'light' : 'dark';
+    root.dataset.theme = next;
+    try {
+      localStorage.setItem('theme', next);
+    } catch (e) {}
+  });
+</script>

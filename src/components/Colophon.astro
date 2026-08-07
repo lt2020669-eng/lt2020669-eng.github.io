@@ -1,0 +1,24 @@
+---
+import { SITE, LINKS, type Lang } from '../consts';
+import { useTranslations } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const year = new Date().getFullYear();
+const span = year > SITE.since ? `${SITE.since}–${year}` : `${SITE.since}`;
+---
+
+<footer class="colophon">
+  <div class="wrap wrap--wide colophon__inner">
+    <p>© {span} {SITE.author} · {t('footer.builtWith')}</p>
+    <p class="colophon__links">
+      <a href={`/${lang}/archive/`}>{t('nav.archive')}</a>
+      <a href={`/${lang}/rss.xml`}>{t('footer.rss')}</a>
+      <a href={LINKS.github} rel="me noopener">GitHub</a>
+    </p>
+  </div>
+</footer>

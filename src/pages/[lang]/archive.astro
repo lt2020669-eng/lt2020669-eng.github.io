@@ -1,0 +1,44 @@
+---
+import Base from '../../layouts/Base.astro';
+import EntryList from '../../components/EntryList.astro';
+import { LANGS, type Lang } from '../../consts';
+import { useTranslations } from '../../i18n/ui';
+import { getAllPosts, type Post } from '../../lib/posts';
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+
+const posts = await getAllPosts(lang);
+const years = new Map<number, Post[]>();
+for (const post of posts) {
+  const year = post.date.getUTCFullYear();
+  const bucket = years.get(year);
+  if (bucket) bucket.push(post);
+  else years.set(year, [post]);
+}
+const grouped = [...years.entries()].sort((a, b) => b[0] - a[0]);
+---
+
+<Base lang={lang} title={t('archive.title')} description={t('archive.lede')}>
+  <header class="page-head">
+    <h1>{t('archive.title')}</h1>
+    <p class="lede">{t('archive.lede')}</p>
+  </header>
+
+  {
+    grouped.length === 0 ? (
+      <p class="empty">{t('list.empty')}</p>
+    ) : (
+      grouped.map(([year, items]) => (
+        <section class="year">
+          <p class="year__label">{year}</p>
+          <EntryList posts={items} lang={lang} showKind showSummary={false} />
+        </section>
+      ))
+    )
+  }
+</Base>

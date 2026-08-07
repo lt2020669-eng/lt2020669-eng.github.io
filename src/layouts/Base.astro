@@ -1,0 +1,43 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Masthead from '../components/Masthead.astro';
+import Colophon from '../components/Colophon.astro';
+import { HTML_LANG, SITE, type Lang } from '../consts';
+import '../styles/global.css';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description?: string;
+  type?: 'website' | 'article';
+  publishedTime?: Date;
+  modifiedTime?: Date;
+  /** 正文区用宽版心（列表页）还是窄版心（文章页） */
+  wide?: boolean;
+}
+
+const { lang, title, description, type, publishedTime, modifiedTime, wide = true } = Astro.props;
+const fullTitle = title === SITE.wordmark ? title : `${title} — ${SITE.wordmark}`;
+---
+
+<html lang={HTML_LANG[lang]} data-lang={lang}>
+  <head>
+    <BaseHead
+      lang={lang}
+      title={fullTitle}
+      description={description}
+      type={type}
+      publishedTime={publishedTime}
+      modifiedTime={modifiedTime}
+    />
+  </head>
+  <body>
+    <Masthead lang={lang} />
+    <main>
+      <div class={wide ? 'wrap wrap--wide' : 'wrap'}>
+        <slot />
+      </div>
+    </main>
+    <Colophon lang={lang} />
+  </body>
+</html>

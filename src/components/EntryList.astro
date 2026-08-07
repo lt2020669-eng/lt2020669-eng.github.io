@@ -1,0 +1,40 @@
+---
+import type { Lang } from '../consts';
+import { useTranslations } from '../i18n/ui';
+import { formatDate, isoDate, type Post } from '../lib/posts';
+
+interface Props {
+  posts: Post[];
+  lang: Lang;
+  /** 混合列表（首页 / 归档）要显示「博客 / 日记」的小标签 */
+  showKind?: boolean;
+  showSummary?: boolean;
+}
+
+const { posts, lang, showKind = false, showSummary = true } = Astro.props;
+const t = useTranslations(lang);
+const kindLabel = { blog: t('nav.blog'), diary: t('nav.diary') };
+---
+
+{
+  posts.length === 0 ? (
+    <p class="empty">{t('list.empty')}</p>
+  ) : (
+    <ul class="entries">
+      {posts.map((post) => (
+        <li class="entry">
+          <p class="entry__meta">
+            <time class="entry__date" datetime={isoDate(post.date)}>
+              {formatDate(post.date, lang)}
+            </time>
+            {showKind && <span class="entry__kind">{kindLabel[post.section]}</span>}
+          </p>
+          <h2 class="entry__title">
+            <a href={post.href}>{post.title}</a>
+          </h2>
+          {showSummary && post.summary && <p class="entry__summary">{post.summary}</p>}
+        </li>
+      ))}
+    </ul>
+  )
+}

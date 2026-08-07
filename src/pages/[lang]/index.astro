@@ -1,0 +1,31 @@
+---
+import Base from '../../layouts/Base.astro';
+import EntryList from '../../components/EntryList.astro';
+import { LANGS, SITE, type Lang } from '../../consts';
+import { useTranslations } from '../../i18n/ui';
+import { getAllPosts } from '../../lib/posts';
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const posts = (await getAllPosts(lang)).slice(0, 8);
+---
+
+<Base lang={lang} title={SITE.wordmark} description={t('site.description')}>
+  <section class="hero">
+    <h1>{t('home.greeting')}</h1>
+    <p>{t('home.intro')}</p>
+  </section>
+
+  <section>
+    <p class="section-label">
+      <span>{t('home.latest')}</span>
+      <span class="rule" aria-hidden="true"></span>
+      <a href={`/${lang}/archive/`}>{t('home.more')}</a>
+    </p>
+    <EntryList posts={posts} lang={lang} showKind />
+  </section>
+</Base>

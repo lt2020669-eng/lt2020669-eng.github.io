@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lt2020669-eng.github.io/sitemap-index.xml
