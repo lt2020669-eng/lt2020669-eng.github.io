@@ -1,7 +1,8 @@
 ---
+import { getEntry, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import EntryList from '../../components/EntryList.astro';
-import { LANGS, LINKS, SITE, type Lang } from '../../consts';
+import { LANGS, SITE, type Lang } from '../../consts';
 import { useTranslations } from '../../i18n/ui';
 import { getAllPosts } from '../../lib/posts';
 
@@ -11,29 +12,42 @@ export function getStaticPaths() {
 
 const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
+
+// 首页就是自我介绍页：正文来自 src/content/about/{zh,ja,en}.md
+const entry = await getEntry('about', lang);
+const rendered = entry ? await render(entry) : null;
+const Content = rendered?.Content;
+const title = entry?.data.title ?? t('nav.about');
+
 const posts = (await getAllPosts(lang)).slice(0, 8);
 ---
 
-<Base lang={lang} title={SITE.wordmark} description={t('site.description')}>
-  <section class="hero">
-    <img
-      class="avatar"
-      src={SITE.avatar}
-      width="88"
-      height="88"
-      alt={SITE.author}
-      fetchpriority="high"
-      decoding="async"
-    />
-    <h1>{t('home.greeting')}</h1>
-    <p>{t('home.intro')}</p>
-    <p class="hero__meta">{t('home.languages')}</p>
-    <p class="hero__meta">
-      {t('home.contact')}<a href={`mailto:${LINKS.business}`}>{LINKS.business}</a>
-    </p>
-  </section>
+<Base
+  lang={lang}
+  title={SITE.wordmark}
+  description={entry?.data.summary ?? t('site.description')}
+  wide={false}
+>
+  <article class="intro">
+    <header class="article__head">
+      <img
+        class="avatar"
+        src={SITE.avatar}
+        width="112"
+        height="112"
+        alt={SITE.author}
+        fetchpriority="high"
+        decoding="async"
+      />
+      <h1>{title}</h1>
+    </header>
 
-  <section>
+    <div class="prose">
+      {Content ? <Content /> : <p class="empty">{t('list.empty')}</p>}
+    </div>
+  </article>
+
+  <section class="home-latest">
     <p class="section-label">
       <span>{t('home.latest')}</span>
       <span class="rule" aria-hidden="true"></span>

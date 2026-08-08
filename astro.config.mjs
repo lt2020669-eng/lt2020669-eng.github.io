@@ -9,6 +9,12 @@ export default defineConfig({
   site: SITE_URL,
   trailingSlash: 'ignore',
   build: { format: 'directory' },
+  // 自我介绍已经并进各语言首页，旧的 /about/ 链接继续可用，跳回首页
+  redirects: {
+    '/zh/about': '/zh/',
+    '/ja/about': '/ja/',
+    '/en/about': '/en/',
+  },
   integrations: [
     sitemap({
       i18n: {

@@ -318,8 +318,9 @@ main {
 
 /* ---------- 首页 ---------- */
 
-.hero {
-  margin-bottom: clamp(3rem, 8vw, 5rem);
+/* 首页＝自我介绍页，正文下面接「最近」列表 */
+.home-latest {
+  margin-top: clamp(3.5rem, 9vw, 5.5rem);
 }
 
 /* ---------- 头像 ---------- */
@@ -333,37 +334,10 @@ main {
   box-shadow: 0 0 0 1px var(--rule);
 }
 
-.hero .avatar {
-  width: 88px;
-  height: 88px;
-  margin-bottom: 1.5rem;
-}
-
 .article__head .avatar {
   width: 112px;
   height: 112px;
   margin-bottom: 1.4rem;
-}
-
-.hero h1 {
-  font-size: var(--step-3);
-  margin-bottom: 1.1rem;
-}
-
-.hero p {
-  color: var(--ink-soft);
-  max-width: 33rem;
-}
-
-.hero p + p {
-  margin-top: 0.9rem;
-}
-
-/* 语言、联系方式这两行走辅助字号，和上面的自述拉开层次 */
-.hero__meta {
-  font-family: var(--font-ui);
-  font-size: var(--step--1);
-  color: var(--ink-faint);
 }
 
 .section-label {

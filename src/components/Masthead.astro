@@ -14,11 +14,15 @@ const segments = path.split('/').filter(Boolean);
 const rest = segments.slice(1).join('/');
 const altHref = (target: Lang) => `/${target}/${rest}${rest ? '/' : ''}`;
 
+// 自我介绍就是首页本身，所以它指向 /<lang>/，高亮要按精确匹配判断
 const links = [
+  { href: `/${lang}/`, label: t('nav.about'), match: `/${lang}/`, exact: true },
   { href: `/${lang}/blog/`, label: t('nav.blog'), match: `/${lang}/blog` },
   { href: `/${lang}/diary/`, label: t('nav.diary'), match: `/${lang}/diary` },
-  { href: `/${lang}/about/`, label: t('nav.about'), match: `/${lang}/about` },
 ];
+
+const isCurrent = (link: (typeof links)[number]) =>
+  link.exact ? path === link.match || path === `/${lang}` : path.startsWith(link.match);
 ---
 
 <header class="masthead">
@@ -28,7 +32,7 @@ const links = [
     <nav class="nav" aria-label={SITE.wordmark}>
       {
         links.map((link) => (
-          <a href={link.href} aria-current={path.startsWith(link.match) ? 'page' : undefined}>
+          <a href={link.href} aria-current={isCurrent(link) ? 'page' : undefined}>
             {link.label}
           </a>
         ))
