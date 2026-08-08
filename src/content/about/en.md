@@ -1,32 +1,51 @@
 ---
-title: 'About'
-summary: "lily: arrived in Japan in 2022, now working in IT there. System stability by day, building with AI by night."
+title: Self-introduction
+summary: "Nanasawa Nagisa (lily): arrived in Japan in 2022, now working in IT at a Japanese company. System stability by day, building with AI by night."
 ---
 
-Hi! I'm **lily**. I arrived in Japan in July 2022, graduated in March 2025, and now work in IT at a Japanese company. I speak Chinese, Japanese and English.
+I'm **Nanasawa Nagisa (lily)**. I graduated from an IT vocational school in March 2025. From April 2025 to April 2026, while working at a Japanese IT company, I took part in system development projects for Fujitsu, Hitachi, Toshiba, and other clients. I also handled operations and maintenance for the automotive parts ERP system at Marelli, a globally known supplier of automotive components and systems. In April 2026, I built an industrial translation system with Cursor and Gemini to translate overseas-ready industrial catalogs for Julai (Chongqing) Ventilation Equipment Co., Ltd. I have worked as a professional interpreter at Japan IT Week at Tokyo Big Sight. I have built lightweight interactive websites for a tattoo studio, a renewable energy company, and TK Live Streaming Studio. In August 2026, I launched my personal brand comesfromtheheart (CFTH), an independent site for pet-and-owner portrait photos, custom gift design, and heartfelt connections. I currently serve as Director of L&M LLC, advisor to Global Technology Co., Ltd., and founder of the CFTH brand.
 
-By day, I focus on system stability, code maintenance, and operations. By night, I build cool stuff using AI & Cursor. This site is where I share those AI creations, the notes I make while learning, and a diary.
+Languages: Chinese, Japanese, and English.
 
-I build by one rule: **only build things that solve a problem I actually have.** So far it hasn't let me down.
+[For web design, business cooperation, and other inquiries: lt2020669@gmail.com](mailto:lt2020669@gmail.com)
 
-Japanese was the first language I really fought my way through: memorise the words, study the grammar, and only much later actually speak. It wasn't a pleasant road, but it ended at N1. On 12 October 2025 I started English, and this time I changed the method — only material I genuinely care about, and speaking from day one. It's less a language course than an experiment I'm running on myself.
 
-## Things I've built
+| Project                         | What I was trying                                                                                                                | Link                                                                                  |
+| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Review                          | Try deploying a website with Google AI Studio                                                                                    | [See the site](https://glittering-salamander-c1c579.netlify.app/)                     |
+| Questionnaire                   | Try publishing a project on a paid domain, hosted on Cloudflare                                                                  | [8998800.xyz](https://8998800.xyz)                                                    |
+| Tattooing                       | Gain experience: build a website for a tattoo studio with a booking system                                                       | [lt2020669-eng.github.io/tattooing](https://lt2020669-eng.github.io/tattooing/)     |
+| Huanqinghai corporate site        | Close the business loop: build a company website and inquiry form for Huanqinghai Co., Ltd.                                      | [huanqinghai-jp.com](https://huanqinghai-jp.com/zh)                                   |
+| Serifu streamer scripts           | Build a streamer script website for a live streaming company                                                                     | [lt2020669-eng.github.io/serifu-site](https://lt2020669-eng.github.io/serifu-site/) |
+| (CFTH) comesfromtheheart store    | Launch a personal-brand independent site: pet-and-owner portraits, custom gift design, and a bridge for heartfelt connections    | [comesfromtheheart.online](https://www.comesfromtheheart.online)                    |
 
-| Project | What I was trying | Link |
-| --- | --- | --- |
-| Review | Deploy a website using Google AI Studio | [See the site](https://glittering-salamander-c1c579.netlify.app/) |
-| Questionnaire | Publish a project on a paid domain, hosted on Cloudflare | [8998800.xyz](https://8998800.xyz) |
-| CFTH (under development) | Use Cursor to build a larger platform where customers generate images with AI and buy custom products printed with their designs | [comesfromtheheart.online](https://www.comesfromtheheart.online) |
 
-## Things that shaped this
+
+
+## You are the books you've read, and the road you've walked
 
 - [44 Harsh Truths About The Game Of Life — Naval Ravikant (4K)](https://www.youtube.com/watch?v=KyfUysrNaco) — video. This is where the Review project began.
 - [The Almanack of Naval Ravikant](https://www.youtube.com/watch?v=6avJHaC3C2U) — book. Same starting point.
 - [How to fix your entire life in 1 day](https://www.youtube.com/watch?v=K8K09g9XR4s) — video. The seed of the Questionnaire project.
+- *Nonviolent Communication*
+- *Influence*
+- *The 7 Habits of Highly Effective People*
+- *The Almanack of Naval Ravikant*
+- *Make It Stick*
+- *Awakening of Cognition*
+- *Clear Thinking*
+- *Crucial Conversations*
+- *Peak*
+- *Atomic Habits*
+- *The Courage to Be Disliked*
+- *Low-Risk Entrepreneurship*
+- *How to Win Friends and Influence People*
+- *Tao Te Ching*
+
+
 
 ## About this site
 
-Two threads: **Blog** is the things I have to think through before I can write them; **Diary** is the days themselves. I write in three languages because my life already runs in three.
+Two threads: trilingual **Blog** and **Diary**
 
-Say hello: [hello@comesfromtheheart.online](mailto:hello@comesfromtheheart.online)
+Write to me: [hello@comesfromtheheart.online](mailto:hello@comesfromtheheart.online) or [lt2020669@gmail.com](mailto:lt2020669@gmail.com)
