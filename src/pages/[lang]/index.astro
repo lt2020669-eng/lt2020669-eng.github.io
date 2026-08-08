@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import EntryList from '../../components/EntryList.astro';
-import { LANGS, SITE, type Lang } from '../../consts';
+import { LANGS, LINKS, SITE, type Lang } from '../../consts';
 import { useTranslations } from '../../i18n/ui';
 import { getAllPosts } from '../../lib/posts';
 
@@ -27,6 +27,10 @@ const posts = (await getAllPosts(lang)).slice(0, 8);
     />
     <h1>{t('home.greeting')}</h1>
     <p>{t('home.intro')}</p>
+    <p class="hero__meta">{t('home.languages')}</p>
+    <p class="hero__meta">
+      {t('home.contact')}<a href={`mailto:${LINKS.business}`}>{LINKS.business}</a>
+    </p>
   </section>
 
   <section>

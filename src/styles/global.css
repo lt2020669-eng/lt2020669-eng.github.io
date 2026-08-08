@@ -352,7 +352,18 @@ main {
 
 .hero p {
   color: var(--ink-soft);
-  max-width: 31rem;
+  max-width: 33rem;
+}
+
+.hero p + p {
+  margin-top: 0.9rem;
+}
+
+/* 语言、联系方式这两行走辅助字号，和上面的自述拉开层次 */
+.hero__meta {
+  font-family: var(--font-ui);
+  font-size: var(--step--1);
+  color: var(--ink-faint);
 }
 
 .section-label {

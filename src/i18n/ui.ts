@@ -12,7 +12,9 @@ export const ui = {
     'nav.archive': '归档',
     'home.greeting': '你好，我是 lily。',
     'home.intro':
-      '我在日本一家公司做 IT。白天管系统稳定、代码维护和运维，晚上用 AI 和 Cursor 做自己想做的东西。这里放我用 AI 做出来的项目、学习路上的笔记，和一些日记。',
+      '我是 中澤　汀（lily）。2025 年 3 月IT专门学校毕业。2025年4月到2026年4月IT日企就职期间，曾经参与富士通和日立，东芝等企业的系统开发项目。并在全球知名的汽车零部件与系统技术供应商马瑞利（Marelli）的汽车零部件ERP系统做运维和保守工作。2026年4月使用cursor和Gemini搭建了工业翻译系统，为中国企业巨来（重庆）通风设备股份有限公司翻译出海工业级画册。曾经为Japan IT Week在日本东京有明国际展览中心（Tokyo Big Sight）中做专业翻译。依次为纹身工作室，可再生能源公司，TK直播工作室搭建轻交互网站，2026年8月上线个人品牌comesfromtheheart（CFTH）人宠合照肖像照&送礼自定义设计平台独立站。目前担任L&M合同会社的取締役和环球科技株式会社顾问与CFTH品牌创始人',
+    'home.languages': '语言：中文、日语、英语。',
+    'home.contact': '请求网页制作 / 商务合作等请联系：',
     'home.latest': '最近',
     'home.more': '看全部',
     'blog.title': '博客',
@@ -49,7 +51,9 @@ export const ui = {
     'nav.archive': 'アーカイブ',
     'home.greeting': 'こんにちは、lily です。',
     'home.intro':
-      '日本の会社で IT の仕事をしています。昼はシステムの安定運用・コードの保守・運用まわり、夜は AI と Cursor で自分が作りたいものを作っています。ここには、AI で作ったプロジェクト、学びの途中のノート、そして日記を置いています。',
+      '中澤　汀（lily）です。2025年3月に IT 専門学校を卒業しました。2025年4月から2026年4月まで日本の IT 企業に在籍し、富士通・日立・東芝などの企業向けシステム開発プロジェクトに参加しました。世界的に知られる自動車部品・システム技術サプライヤーであるマレリ（Marelli）の自動車部品 ERP システムの運用・保守も担当しました。2026年4月には Cursor と Gemini を使って工業翻訳システムを構築し、中国企業・巨来（重慶）通風設備股份有限公司の海外向け工業カタログ翻訳を支援しました。Japan IT Week において、東京ビッグサイト（Tokyo Big Sight）での専門通訳も経験しています。タトゥースタジオ、再生可能エネルギー会社、TK ライブ配信スタジオ向けの軽量インタラクティブサイトを順次構築し、2026年8月には個人ブランド comesfromtheheart（CFTH）——人とペットの肖像写真、ギフトのカスタムデザイン、想いをつなぐプラットフォーム——の独立サイトを公開しました。現在は L&M 合同会社の取締役、環球科技株式会社の顧問、CFTH ブランド創設者を務めています。',
+    'home.languages': '言語：中国語・日本語・英語。',
+    'home.contact': 'Web 制作・ビジネス提携などのご依頼：',
     'home.latest': '最近の記事',
     'home.more': 'すべて見る',
     'blog.title': 'ブログ',
@@ -86,7 +90,9 @@ export const ui = {
     'nav.archive': 'Archive',
     'home.greeting': "Hi, I'm lily.",
     'home.intro':
-      "I'm a System Engineer working in Japan. By day, I focus on system stability, code maintenance, and operations. By night, I build cool stuff using AI & Cursor. Here I share those AI creations, the notes I make while learning, and a diary.",
+      "I'm Nanasawa Nagisa (lily). I graduated from an IT vocational school in March 2025. From April 2025 to April 2026, while working at a Japanese IT company, I took part in system development projects for Fujitsu, Hitachi, Toshiba, and other clients. I also handled operations and maintenance for the automotive parts ERP system at Marelli, a globally known supplier of automotive components and systems. In April 2026, I built an industrial translation system with Cursor and Gemini to translate overseas-ready industrial catalogs for Julai (Chongqing) Ventilation Equipment Co., Ltd. I have worked as a professional interpreter at Japan IT Week at Tokyo Big Sight. I have built lightweight interactive websites for a tattoo studio, a renewable energy company, and TK Live Streaming Studio. In August 2026, I launched my personal brand comesfromtheheart (CFTH), an independent site for pet-and-owner portrait photos, custom gift design, and heartfelt connections. I currently serve as Director of L&M LLC, advisor to Global Technology Co., Ltd., and founder of the CFTH brand.",
+    'home.languages': 'Languages: Chinese, Japanese, and English.',
+    'home.contact': 'For web design, business cooperation and other inquiries: ',
     'home.latest': 'Recent',
     'home.more': 'See all',
     'blog.title': 'Blog',

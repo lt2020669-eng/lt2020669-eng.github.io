@@ -16,6 +16,8 @@ export const SITE = {
 export const LINKS = {
   github: 'https://github.com/lt2020669-eng',
   email: 'hello@comesfromtheheart.online',
+  /** 网页制作 / 商务合作的联系邮箱，首页与「关于」页都用它 */
+  business: 'lt2020669@gmail.com',
   shop: 'https://www.comesfromtheheart.online',
 } as const;
 
