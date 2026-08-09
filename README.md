@@ -2,9 +2,9 @@
 
 三语（中 / 日 / 英）个人站，两个分区：**博客**（想清楚才写得出来的东西）和**日记**（日子本身）。
 
-- 线上地址：https://lt2020669-eng.github.io
-- 技术栈：Astro 7 静态站 + Markdown 写作 + GitHub Actions 自动部署 + GitHub Pages 托管
-- 成本：0 元。没有服务器，没有数据库，没有后台。
+- 线上地址：https://nakazawatei.com （旧地址 https://lt2020669-eng.github.io 仍可访问，页面 canonical 指向新域名）
+- 技术栈：Astro 7 静态站 + Markdown 写作 + Cloudflare Pages 托管（连 GitHub 仓库，push 即自动部署）
+- 成本：仅域名年费（Namecheap，约 $11/年）。没有服务器，没有数据库，没有后台。
 
 ---
 
@@ -88,13 +88,12 @@ draft: true                # true = 只在本地可见，线上不会有
 
 ---
 
-## 以后想换成自己的域名
+## 域名与托管（2026-08 起的现状）
 
-1. 去注册商买域名（比如 `lili.blog`）。
-2. 在域名的 DNS 里加四条 A 记录指向 `185.199.108.153` / `185.199.109.153` / `185.199.110.153` / `185.199.111.153`；用 `www` 子域的话再加一条 CNAME 指向 `lt2020669-eng.github.io`。
-3. 在仓库里新建 `public/CNAME`，内容就一行：你的域名。
-4. 把上面表格里「站点网址」那三处改成新域名，push。
-5. GitHub 仓库 Settings → Pages → Custom domain 填上域名，勾 Enforce HTTPS。
+- 域名 `nakazawatei.com` 购于 Namecheap，DNS 交给 Cloudflare 管（Namecheap 侧只填了 Cloudflare 的两条 nameserver）。
+- 托管在 **Cloudflare Pages**：项目连着本 GitHub 仓库，构建命令 `npm run build`、输出目录 `dist`，push 到 main 即自动构建部署。
+- GitHub Pages 的旧部署（lt2020669-eng.github.io）仍然在跑，作为镜像保留；所有页面的 canonical 已指向 nakazawatei.com，搜索引擎只认新域名。
+- 以后再换域名：改 `astro.config.mjs` 的 `SITE_URL`、`src/consts.ts` 的 `SITE.url`、`public/robots.txt` 三处 + Cloudflare Pages 的 Custom domains 换绑即可。
 
 ---
 

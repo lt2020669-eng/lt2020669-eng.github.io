@@ -2,7 +2,7 @@
 
 export const SITE = {
   /** 与 astro.config.mjs 里的 site 保持一致 */
-  url: 'https://lt2020669-eng.github.io',
+  url: 'https://nakazawatei.com',
   /** 页眉的字标 */
   wordmark: 'lily',
   /** 作者名，用于 RSS / 版权 / 结构化数据 */
