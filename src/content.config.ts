@@ -55,4 +55,17 @@ const about = defineCollection({
   }),
 });
 
-export const collections = { blog, diary, about };
+/** 「服务与报价」页：src/content/services/{zh,ja,en}.md，直接改正文即可。 */
+const services = defineCollection({
+  loader: glob({
+    base: './src/content/services',
+    pattern: '*.md',
+    generateId: ({ entry }) => stripExtension(entry),
+  }),
+  schema: z.object({
+    title: z.string(),
+    summary: z.string().optional(),
+  }),
+});
+
+export const collections = { blog, diary, about, services };

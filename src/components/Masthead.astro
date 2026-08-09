@@ -17,6 +17,7 @@ const altHref = (target: Lang) => `/${target}/${rest}${rest ? '/' : ''}`;
 // 自我介绍就是首页本身，所以它指向 /<lang>/，高亮要按精确匹配判断
 const links = [
   { href: `/${lang}/`, label: t('nav.about'), match: `/${lang}/`, exact: true },
+  { href: `/${lang}/services/`, label: t('nav.services'), match: `/${lang}/services` },
   { href: `/${lang}/blog/`, label: t('nav.blog'), match: `/${lang}/blog` },
   { href: `/${lang}/diary/`, label: t('nav.diary'), match: `/${lang}/diary` },
 ];

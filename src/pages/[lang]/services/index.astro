@@ -1,0 +1,31 @@
+---
+import { getEntry, render } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import { LANGS, type Lang } from '../../../consts';
+import { useTranslations } from '../../../i18n/ui';
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+
+// 服务与报价页：正文来自 src/content/services/{zh,ja,en}.md
+const entry = await getEntry('services', lang);
+const rendered = entry ? await render(entry) : null;
+const Content = rendered?.Content;
+const title = entry?.data.title ?? t('nav.services');
+---
+
+<Base lang={lang} title={title} description={entry?.data.summary ?? ''} wide={false}>
+  <article class="intro">
+    <header class="article__head">
+      <h1>{title}</h1>
+    </header>
+
+    <div class="prose">
+      {Content ? <Content /> : <p class="empty">{t('list.empty')}</p>}
+    </div>
+  </article>
+</Base>

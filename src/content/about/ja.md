@@ -7,17 +7,16 @@ summary: '中澤　汀（lily）：2022年に来日、いまは日本企業で I
 
 言語：中国語・日本語・英語。
 
-[Web 制作・ビジネス提携などのご依頼：lt2020669@gmail.com](mailto:lt2020669@gmail.com)
+Web 制作を承っています。料金の目安とご依頼の流れは [サービス・料金](/ja/services/) をご覧ください。ご相談・お見積りは無料です：[lt2020669@gmail.com](mailto:lt2020669@gmail.com)
 
+## 制作実績
 
-| プロジェクト                          | 何を試したか                                                       | リンク                                                                                  |
-| ------------------------------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
-| Review                          | Google AI Studio でウェブサイトをデプロイしてみる                            | [サイトを見る](https://glittering-salamander-c1c579.netlify.app/)                       |
-| Questionnaire                   | 試し：有料ドメインで公開し、Cloudflare でホスティングする                            | [8998800.xyz](https://8998800.xyz)                                                  |
-| Tattooing タトゥー                  | 経験を積む：タトゥースタジオ向けサイトを制作し、予約システムを構築する                      | [lt2020669-eng.github.io/tattooing](https://lt2020669-eng.github.io/tattooing/)     |
-| 環清海会社サイト                        | ビジネスの一連の流れを回す：環清海有限公司の会社サイトと問い合わせフォームを構築する                  | [huanqinghai-jp.com](https://huanqinghai-jp.com/zh)                                 |
-| Serifu 配信台本                     | あるライブ配信会社向けに配信台本サイトを構築する                               | [lt2020669-eng.github.io/serifu-site](https://lt2020669-eng.github.io/serifu-site/) |
-| (CFTH) comesfromtheheart 独立サイト | 個人ブランドの独立サイトを構築・公開：人とペットの肖像、ギフトのカスタムデザイン、想いをつなぐ架け橋 | [comesfromtheheart.online](https://www.comesfromtheheart.online)                    |
+| 実績                              | 内容                                                                                       | リンク                                                                                  |
+| ------------------------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| CFTH（自社ブランド・運営中）        | AI 画像生成 × EC のフルスクラッチ開発。決済（Stripe）から印刷・配送の自動連携まで、企画・開発・運営のすべてを一人で担当 | [comesfromtheheart.online](https://www.comesfromtheheart.online)                    |
+| 環清海有限公司 会社サイト           | 会社サイトとお問い合わせフォームを構築。公開後の運用まで一貫して対応                                     | [huanqinghai-jp.com](https://huanqinghai-jp.com/zh)                                 |
+| タトゥースタジオ向けサイト           | 店舗サイトを制作し、予約システムを構築                                                          | [lt2020669-eng.github.io/tattooing](https://lt2020669-eng.github.io/tattooing/)     |
+| Serifu 配信台本サイト               | ライブ配信会社向けの業務ツールサイトを構築                                                        | [lt2020669-eng.github.io/serifu-site](https://lt2020669-eng.github.io/serifu-site/) |
 
 
 

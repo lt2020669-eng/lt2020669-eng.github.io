@@ -6,17 +6,16 @@ summary: 中澤　汀（lily）：2022 年来日本，现在在日企做 IT。�
 我是 **中澤　汀（lily）**。2025 年 3 月IT专门学校毕业。2025年4月到2026年4月IT日企就职期间，曾经参与富士通和日立，东芝等企业的系统开发项目。并在全球知名的汽车零部件与系统技术供应商马瑞利（Marelli）的汽车零部件ERP系统做运维和保守工作。2026年4月使用cursor和Gemini搭建了工业翻译系统，为中国企业巨来（重庆）通风设备股份有限公司翻译出海工业级画册。曾经为Japan IT Week在日本东京有明国际展览中心（Tokyo Big Sight）中做专业翻译。依次为纹身工作室，可再生能源公司，TK直播工作室搭建轻交互网站，2026年8月上线个人品牌comesfromtheheart（CFTH）人宠合照肖像照&送礼自定义设计平台独立站。目前担任L&M合同会社的取締役和环球科技株式会社顾问与CFTH品牌创始人  
 语言：中文、日语、英语。  
   
-请求网页制作 / 商务合作等请联系：[lt2020669@gmail.com](mailto:lt2020669@gmail.com)
+我承接网站制作。价格目安与委托流程见[服务与报价](/zh/services/)。咨询与报价免费：[lt2020669@gmail.com](mailto:lt2020669@gmail.com)
 
+## 制作实绩
 
-| 项目                          | 想解决什么                                 | 地址                                                                                  |
-| --------------------------- | ------------------------------------- | ----------------------------------------------------------------------------------- |
-| Review                      | 试着用 Google AI Studio 部署一个网站           | [看这个站](https://glittering-salamander-c1c579.netlify.app/)                           |
-| Questionnaire               | 尝试：用付费域名发布项目，托管在 Cloudflare           | [8998800.xyz](https://8998800.xyz)                                                  |
-| Tattooing 纹身                | 积累经验：为纹身工作室制作网站，搭建预约系统                | [lt2020669-eng.github.io/tattooing](https://lt2020669-eng.github.io/tattooing/)     |
-| 环清海公司网站                     | 跑通商业闭环：为环清海有限公司建立公司网站，搭建咨询表单          | [huanqinghai-jp.com](https://huanqinghai-jp.com/zh)                                 |
-| Serifu主播台本                  | 为某个直播公司搭建主播台本网站                       | [lt2020669-eng.github.io/serifu-site](https://lt2020669-eng.github.io/serifu-site/) |
-| (CFTH )comesfromtheheart独立站 | 搭建并上架独立站的个人品牌，人宠合照肖像照&送礼自定义设计平台&心意的桥梁 | [comesfromtheheart.online](https://www.comesfromtheheart.online)                    |
+| 实绩                          | 内容                                                        | 地址                                                                                  |
+| --------------------------- | --------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| CFTH（自营品牌・运营中）        | AI 图像生成 × EC 全定制开发：从支付（Stripe）到印刷配送自动联动，企划、开发、运营全部一人完成 | [comesfromtheheart.online](https://www.comesfromtheheart.online)                    |
+| 环清海有限公司官网              | 公司官网与咨询表单构建，上线后运维一并负责                            | [huanqinghai-jp.com](https://huanqinghai-jp.com/zh)                                 |
+| 纹身工作室网站                  | 店铺网站制作，搭建预约系统                                        | [lt2020669-eng.github.io/tattooing](https://lt2020669-eng.github.io/tattooing/)     |
+| Serifu 主播台本网站             | 为直播公司搭建的业务工具网站                                       | [lt2020669-eng.github.io/serifu-site](https://lt2020669-eng.github.io/serifu-site/) |
 
 
 
