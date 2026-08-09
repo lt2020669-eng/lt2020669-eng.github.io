@@ -46,6 +46,13 @@ Proof of work: my own brand, [comesfromtheheart.online](https://www.comesfromthe
 6. Launch & remaining payment
 7. Optional ongoing maintenance
 
+## Free download
+
+Filling in the hearing sheet before we talk speeds everything up (partial answers are fine):
+
+- [Hearing sheet (print, one A4 page)](/downloads/hearing-sheet.html) — print, fill in, then send a photo via LINE or email
+- [Hearing sheet (Excel)](/downloads/hearing-sheet.xlsx) — fill in directly on your computer
+
 ## FAQ
 
 **Is it safe to hire an individual?**
